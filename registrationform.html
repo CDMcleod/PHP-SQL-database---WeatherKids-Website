@@ -1,0 +1,94 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 //EN"> 
+<html>
+<head>
+       <title>Assignment 2</title>
+	   <style>
+		body {
+			Background-color: gainsboro;
+		}
+		
+		#box1{
+		width: 50px
+		padding: 10px;
+		border: 2px solid gray;
+		margin: 0;
+	   }
+	   
+	   fieldset {
+			Background-color : white;
+			Width: 550px;
+		}
+		
+		option{
+			color: mediumseagreen;
+		}
+		
+		select{
+			color: mediumseagreen;
+		}
+		
+		input.button1{
+			Background-color: mediumseagreen;
+			color: white;
+		}
+		
+		input.button2{
+			Background-color: red;
+			color: white;
+		}
+	   </style>
+	   
+</head>
+<body>
+<form action="checkform.php" method="post">
+<h1>Weather Wizards Workshops</h1>
+
+
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We host weather wizards workshops throughout the year for kids from 6-12.</p><br />
+		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please note that the following workshops are free to members:</p></n>
+
+<ul>
+<li>Make a Rain Gauge</li>
+<li>Make a Thermometer</li>
+</ul>
+	<br />
+	
+	<!-- <div id="box1"> This text in the box</div> -->
+	
+	<fieldset>
+	<legend>Register Your Interests</legend>
+	
+	<input type="checkbox" name="interests[]" value="Make a Raingauge">Make a Rain Gauge<br>
+	<input type="checkbox" name="interests[]" value="Make a Thermometer">Make a Thermometer<br>
+	<input type="checkbox" name="interests[]" value="Make a Windsock">Make a Windsock<br>
+	<input type="checkbox" name="interests[]" value="Make Lightning in your Mouth">Make Lightning In Your Mouth<br>
+	<input type="checkbox" name="interests[]" value="Make a Hygrometer">Make a Hygrometer
+	<br />
+	
+	<p><label>Your Name: <br><input type="text" name="name" size="30" maxlength="40" /></label></p><br>
+	<p><label>Your Parent or Guardian's Name: <br><input type="text" name="p_name" size="30" maxlength="40" /></label></p><br>
+	<p><label>Your Parent or Guardian's email: <br><input type="text" name="email" size="30" maxlength="40" /></label></p><br>
+	<p><label>Your Parent or Guardian's phone: <br><input type="text" name="phone" size="30" maxlength="40" /></label></p>
+	<br />
+	
+	<p><label>Your closest center: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<select name="center">
+		
+		<option selected value="Charleston">Charleston</option>
+		<option value="Summerville">Summerville</option>
+		<option value="Mt. Pleasent">Mt. Pleasent</option>
+		</select></label></p>
+		
+	<p><label for="member"> Are you a member: </label>
+	<input type="radio" name="member" value="yes" /> Yes
+	<input type="radio" name="member" value="no" /> No
+	<input type="radio" name="member" value="Sign" /> Sign me up.</p>
+	
+	<p align="left"> <input type="submit" name="submit" value="Register" class="button1"/>
+	<input type="reset" name="reset" value="Reset Page" class="button2"</p>
+	</fieldset>
+
+	
+</form>	
+</body>
+</html>
